@@ -29,4 +29,14 @@ namespace Align
   };
 }
 
+
+#define REGISTER( derived, base, name )                                       \
+namespace                                                                     \
+{                                                                             \
+  int s_factory_reg = (                                                       \
+    ::Align::Factory<base>::Get().reg<derived>( name ),                       \
+    0 );                                                                      \
+}
+
+
 #include "Factory.inl"

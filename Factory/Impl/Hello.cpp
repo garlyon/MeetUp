@@ -12,4 +12,6 @@ namespace Align
       std::cout << "Hello, World!" << std::endl;
     }
   };
+
+  REGISTER( Hello, Object, "Hello" );
 }
