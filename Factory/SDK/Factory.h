@@ -21,6 +21,8 @@ namespace Align
 
     std::unique_ptr<T> create( const std::string& ) const;
 
+    template <typename X> void reg( const std::string& );
+
   private:
 
     std::unordered_map<std::string, std::unique_ptr<Creator>> d_collection;
