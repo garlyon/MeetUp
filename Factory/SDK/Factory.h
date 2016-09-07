@@ -3,6 +3,7 @@
 
 #include <memory>
 #include <string>
+#include <unordered_map>
 
 
 namespace Align
@@ -10,9 +11,19 @@ namespace Align
   template <typename T>
   class Factory
   {
+    struct Creator;
+
   public:
 
-    static std::unique_ptr<T> Create( const std::string& );
+    static Factory& Get();
+
+  public:
+
+    std::unique_ptr<T> create( const std::string& ) const;
+
+  private:
+
+    std::unordered_map<std::string, std::unique_ptr<Creator>> d_collection;
   };
 }
 

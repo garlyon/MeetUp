@@ -5,7 +5,7 @@
 
 void helloInstance()
 {
-  if( auto o = Align::Factory<Align::Object>::Create( "Hello" ) )
+  if( auto o = Align::Factory<Align::Object>::Get().create( "Hello" ) )
   {
     o->hello();
   }
