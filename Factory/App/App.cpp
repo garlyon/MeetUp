@@ -1,9 +1,25 @@
 #include <iostream>
+#include "../SDK/Factory.h"
+#include "../SDK/Object.h"
+
+
+void helloInstance()
+{
+  if( auto o = Align::Factory<Align::Object>::Create( "Hello" ) )
+  {
+    o->hello();
+  }
+  else
+  {
+    std::cout << "No Hello implementation found" << std::endl;
+  }
+}
 
 
 int main()
 {
-  std::cout << "Hello, World!" << std::endl;
+  helloInstance();
+
   return 0;
 }
 
