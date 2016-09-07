@@ -30,7 +30,7 @@ std::unique_ptr<T> Align::Factory<T>::create( const std::string& i_name ) const
 
 
 template <typename T> template <typename X>
-void Align::Factory<T>::regist( const std::string& i_name )
+void Align::Factory<T>::reg( const std::string& i_name )
 {
   struct Impl : public Creator
   {
@@ -41,4 +41,11 @@ void Align::Factory<T>::regist( const std::string& i_name )
   };
 
   d_collection.emplace( i_name, std::make_unique<Impl>() );
+}
+
+
+template <typename T>
+void Align::Factory<T>::unreg( const std::string& name )
+{
+  d_collection.erase( name );
 }

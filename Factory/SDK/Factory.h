@@ -18,7 +18,8 @@ namespace Align
     std::unique_ptr<T>            create( const std::string& ) const;
 
     //  make derived class X constructible by name
-    template <typename X> void    regist( const std::string& );
+    template <typename X> void    reg( const std::string& );
+    void                          unreg( const std::string& );
 
   private:
 

@@ -4,5 +4,9 @@
 
 namespace
 {
-  int g_reg = ( Align::GetObjectFactory().regist<Align::Hello>( "Hello" ), 42 );
+  struct Reg
+  {
+    Reg() { Align::GetObjectFactory().reg<Align::Hello>( "Hello" ); }
+    ~Reg() { Align::GetObjectFactory().unreg( "Hello" ); }
+  } g_reg;
 }
