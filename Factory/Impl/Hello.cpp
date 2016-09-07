@@ -1,17 +1,8 @@
-#include "../SDK/Object.h"
-#include "../SDK/Factory.h"
+#include "Hello.h"
 #include <iostream>
 
 
-namespace Align
+void Align::Hello::hello()
 {
-  struct Hello : public Object
-  {
-    virtual void hello() override
-    {
-      std::cout << "Hello, World!" << std::endl;
-    }
-  };
-
-  REGISTER( Hello, Object, "Hello" );
+  std::cout << "Hello, World!" << std::endl;
 }

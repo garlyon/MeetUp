@@ -14,14 +14,6 @@ struct Align::Factory<T>::Creator
 
 
 template <typename T>
-Align::Factory<T>& Align::Factory<T>::Get()
-{
-  static Factory s_factory;
-  return s_factory;
-}
-
-
-template <typename T>
 std::unique_ptr<T> Align::Factory<T>::create( const std::string& i_name ) const
 {
   auto f = d_collection.find( i_name );
@@ -38,7 +30,7 @@ std::unique_ptr<T> Align::Factory<T>::create( const std::string& i_name ) const
 
 
 template <typename T> template <typename X>
-void Align::Factory<T>::reg( const std::string& i_name )
+void Align::Factory<T>::regist( const std::string& i_name )
 {
   struct Impl : public Creator
   {

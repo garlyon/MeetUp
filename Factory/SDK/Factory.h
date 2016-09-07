@@ -8,34 +8,24 @@
 
 namespace Align
 {
+  //  Factory template class creates 
   template <typename T>
   class Factory
   {
-    struct Creator;
-
   public:
 
-    static Factory& Get();
+    //  construct derived class instance by name
+    std::unique_ptr<T>            create( const std::string& ) const;
 
-  public:
-
-    std::unique_ptr<T> create( const std::string& ) const;
-
-    template <typename X> void reg( const std::string& );
+    //  make derived class X constructible by name
+    template <typename X> void    regist( const std::string& );
 
   private:
 
+    struct Creator;
+
     std::unordered_map<std::string, std::unique_ptr<Creator>> d_collection;
   };
-}
-
-
-#define REGISTER( derived, base, name )                                       \
-namespace                                                                     \
-{                                                                             \
-  int s_factory_reg = (                                                       \
-    ::Align::Factory<base>::Get().reg<derived>( name ),                       \
-    0 );                                                                      \
 }
 
 
