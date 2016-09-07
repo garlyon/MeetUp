@@ -12,6 +12,8 @@ namespace Align
   {
   public:
 
-    static std::unique_ptr<T> Create( const std::string& ) { return{}; }
+    static std::unique_ptr<T> Create( const std::string& );
   };
 }
+
+#include "Factory.inl"

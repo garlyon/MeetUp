@@ -149,6 +149,9 @@
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Object.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Factory.inl" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
