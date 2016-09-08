@@ -147,15 +147,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h" />
-    <ClInclude Include="ObjectFactory.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="Registrator.h" />
     <ClInclude Include="SDK.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Factory.inl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ObjectFactory.cpp" />
+    <None Include="Registrator.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

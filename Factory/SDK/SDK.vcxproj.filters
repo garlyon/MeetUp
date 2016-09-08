@@ -17,20 +17,18 @@
     <ClInclude Include="Object.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectFactory.h">
-      <Filter>Object</Filter>
-    </ClInclude>
     <ClInclude Include="SDK.h">
       <Filter>Object</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ObjectFactory.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
+    <ClInclude Include="Registrator.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Factory.inl">
+      <Filter>Factory</Filter>
+    </None>
+    <None Include="Registrator.inl">
       <Filter>Factory</Filter>
     </None>
   </ItemGroup>
