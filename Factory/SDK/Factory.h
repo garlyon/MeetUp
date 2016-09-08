@@ -8,7 +8,7 @@
 
 namespace Align
 {
-  //  Factory template class creates 
+  //  Factory creates instance of interface implementation by implementation name.
   template <typename T>
   class Factory
   {
@@ -22,7 +22,7 @@ namespace Align
     //  make derived class X constructible by name
     template <typename X> void    add( const std::string& );
 
-    //  do not construct object associated with given name
+    //  no longer construct object by given name
     void                          remove( const std::string& );
 
   private:

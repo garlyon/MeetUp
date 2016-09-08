@@ -32,4 +32,9 @@
       <Filter>Factory</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

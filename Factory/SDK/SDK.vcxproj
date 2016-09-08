@@ -155,6 +155,9 @@
     <None Include="Factory.inl" />
     <None Include="Registrator.inl" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Object.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

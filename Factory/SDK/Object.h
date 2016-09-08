@@ -1,11 +1,16 @@
 #pragma once
 
 
+#include "SDK.h"
+
+
 namespace Align
 {
-  struct Object
+  //  Interface class exported from a library
+  //  We'll make it factorable
+  struct EXPORT Object
   {
     virtual void hello() = 0;
-    virtual ~Object() = default;
+    virtual ~Object();
   };
 }
