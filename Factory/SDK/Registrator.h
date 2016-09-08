@@ -4,7 +4,7 @@
 #include <string>
 
 
-namespace Align
+namespace SDK_NS
 {
   template <typename Derived, typename Base>
   class Registrator

@@ -5,20 +5,10 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Object">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
       <Filter>Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK.h">
-      <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="Registrator.h">
       <Filter>Factory</Filter>
@@ -31,10 +21,5 @@
     <None Include="Registrator.inl">
       <Filter>Factory</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Object.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

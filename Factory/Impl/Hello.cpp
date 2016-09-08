@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-void Align::Hello::hello()
+void Impl_NS::Hello::hello()
 {
   std::cout << "Hello, World!" << std::endl;
 }

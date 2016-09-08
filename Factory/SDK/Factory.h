@@ -6,7 +6,7 @@
 #include <unordered_map>
 
 
-namespace Align
+namespace SDK_NS
 {
   //  Factory creates instance of interface implementation by implementation name.
   template <typename T>

@@ -1,10 +1,14 @@
 #pragma once
 
 
-#include "SDK.h"
+#ifdef INTERFACE_EXPORTS
+#define EXPORT __declspec( dllexport )
+#else
+#define EXPORT __declspec( dllimport )
+#endif
 
 
-namespace Align
+namespace Interface_NS
 {
   //  Interface class exported from a library
   //  We'll make it factorable

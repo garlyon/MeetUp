@@ -5,5 +5,5 @@
 namespace
 {
   //  register implementation in the factory, bind with a name
-  Align::Registrator<Align::Hello, Align::Object> g_reg( "Hello" );
+  SDK_NS::Registrator<Impl_NS::Hello, Interface_NS::Object> g_reg( "Hello" );
 }

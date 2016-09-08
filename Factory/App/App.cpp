@@ -1,12 +1,12 @@
 #include <iostream>
 #include "../SDK/Factory.h"
-#include "../SDK/Object.h"
+#include "../Interface/Object.h"
 #include <Windows.h>
 
 
 void helloInstance()
 {
-  if( auto o = Align::GetFactory<Align::Object>().create( "Hello" ) )
+  if( auto o = SDK_NS::GetFactory<Interface_NS::Object>().create( "Hello" ) )
   {
     o->hello();
   }

@@ -5,7 +5,7 @@
 
 
 template <typename T>
-struct Align::Factory<T>::Creator
+struct SDK_NS::Factory<T>::Creator
 {
   virtual std::unique_ptr<T> create() const = 0;
 
@@ -14,7 +14,7 @@ struct Align::Factory<T>::Creator
 
 
 template <typename T>
-std::unique_ptr<T> Align::Factory<T>::create( const std::string& i_name ) const
+std::unique_ptr<T> SDK_NS::Factory<T>::create( const std::string& i_name ) const
 {
   auto f = d_collection.find( i_name );
 
@@ -30,7 +30,7 @@ std::unique_ptr<T> Align::Factory<T>::create( const std::string& i_name ) const
 
 
 template <typename T> template <typename X>
-void Align::Factory<T>::add( const std::string& i_name )
+void SDK_NS::Factory<T>::add( const std::string& i_name )
 {
   struct Impl : public Creator
   {
@@ -45,14 +45,14 @@ void Align::Factory<T>::add( const std::string& i_name )
 
 
 template <typename T>
-void Align::Factory<T>::remove( const std::string& name )
+void SDK_NS::Factory<T>::remove( const std::string& name )
 {
   d_collection.erase( name );
 }
 
 
 template <typename T>
-Align::Factory<T>& Align::GetFactory()
+SDK_NS::Factory<T>& SDK_NS::GetFactory()
 {
   static Factory<T> f;
   return f;
