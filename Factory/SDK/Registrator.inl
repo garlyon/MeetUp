@@ -5,15 +5,15 @@
 #include "Factory.h"
 
 
-template <typename Derived, typename Base>
-SDK_NS::Registrator<Derived, Base>::Registrator( const std::string& name ) : d_name{ name }
+template <typename T>
+SDK_NS::Registrator<T>::Registrator( const std::string& name ) : d_name{ name }
 {
-  GetFactory<Base>().add<Derived>( d_name );
+  T::GetFactory().add<T>( d_name );
 }
 
 
-template <typename Derived, typename Base>
-SDK_NS::Registrator<Derived, Base>::~Registrator()
+template <typename T>
+SDK_NS::Registrator<T>::~Registrator()
 {
-  GetFactory<Base>().remove( d_name );
+  T::GetFactory().remove( d_name );
 }

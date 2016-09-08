@@ -6,7 +6,7 @@
 
 void helloInstance()
 {
-  if( auto o = SDK_NS::GetFactory<Interface_NS::Object>().create( "Hello" ) )
+  if( auto o = Interface_NS::Object::GetFactory().create( "Hello" ) )
   {
     o->hello();
   }

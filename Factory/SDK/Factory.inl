@@ -49,11 +49,3 @@ void SDK_NS::Factory<T>::remove( const std::string& name )
 {
   d_collection.erase( name );
 }
-
-
-template <typename T>
-SDK_NS::Factory<T>& SDK_NS::GetFactory()
-{
-  static Factory<T> f;
-  return f;
-}

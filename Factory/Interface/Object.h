@@ -1,6 +1,9 @@
 #pragma once
 
 
+#include "../SDK/Factorable.h"
+
+
 #ifdef INTERFACE_EXPORTS
 #define EXPORT __declspec( dllexport )
 #else
@@ -11,8 +14,8 @@
 namespace Interface_NS
 {
   //  Interface class exported from a library
-  //  We'll make it factorable
-  struct EXPORT Object
+  //  Make it factorable through inheritance
+  struct EXPORT Object : public SDK_NS::Factorable<Object>
   {
     virtual void hello() = 0;
     virtual ~Object();

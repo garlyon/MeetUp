@@ -6,7 +6,7 @@
 
 namespace SDK_NS
 {
-  template <typename Derived, typename Base>
+  template <typename T>
   class Registrator
   {
   public:

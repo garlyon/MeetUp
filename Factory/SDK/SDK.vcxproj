@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h" />
+    <ClInclude Include="Factorable.h" />
     <ClInclude Include="Registrator.h" />
   </ItemGroup>
   <ItemGroup>

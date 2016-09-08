@@ -29,9 +29,6 @@ namespace SDK_NS
 
     std::unordered_map<std::string, std::unique_ptr<Creator>> d_collection;
   };
-
-
-  template <typename T> Factory<T>& GetFactory();
 }
 
 

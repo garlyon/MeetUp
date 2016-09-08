@@ -147,7 +147,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Hello.cpp" />
-    <ClCompile Include="HelloReg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hello.h" />
@@ -155,9 +154,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Interface\Interface.vcxproj">
       <Project>{4188629d-1132-420e-8666-a95c3030282a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\SDK\SDK.vcxproj">
-      <Project>{fafcd6ff-c208-4d09-8aa8-c898f5b4f4af}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
