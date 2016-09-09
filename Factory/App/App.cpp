@@ -1,12 +1,12 @@
-#include <iostream>
-#include "../SDK/Factory.h"
-#include "../Interface/Object.h"
+#include "../SDK/Factory.h"           //  here is my template factory
+#include "../Interface/Interface.h"   //  here is my interface
 #include <Windows.h>
+#include <iostream>
 
 
 void helloInstance()
 {
-  if( auto o = Interface_NS::Object::GetFactory().create( "Hello" ) )
+  if( auto o = SDK_NS::GetFactory<Interface_NS::Interface>().create( "Hello" ) )
   {
     o->hello();
   }
@@ -23,7 +23,7 @@ int main()
   helloInstance();
 
   //  2. Implementation is loaded
-  HMODULE res = ::LoadLibraryA( R"~(C:\Users\aterekhov\Documents\GitHub\MeetUp\Factory\Debug\Impl.dll)~" );
+  HMODULE res = ::LoadLibraryA( "Impl.dll" );
   helloInstance();
 
   //  3. Implementation is unloaded

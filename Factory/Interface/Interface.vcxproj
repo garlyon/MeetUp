@@ -146,10 +146,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Object.h" />
+    <ClInclude Include="Interface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Interface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

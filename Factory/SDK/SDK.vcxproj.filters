@@ -21,8 +21,5 @@
     <None Include="Factory.inl">
       <Filter>Factory</Filter>
     </None>
-    <None Include="Registrator.inl">
-      <Filter>Factory</Filter>
-    </None>
   </ItemGroup>
 </Project>

@@ -14,7 +14,8 @@ struct SDK_NS::Factory<T>::Creator
 
 
 template <typename T>
-std::unique_ptr<T> SDK_NS::Factory<T>::create( const std::string& i_name ) const
+std::unique_ptr<T> SDK_NS::Factory<T>::create(
+  const std::string& i_name ) const
 {
   auto f = d_collection.find( i_name );
 

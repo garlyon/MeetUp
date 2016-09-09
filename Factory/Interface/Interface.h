@@ -15,9 +15,10 @@ namespace Interface_NS
 {
   //  Interface class exported from a library
   //  Make it factorable through inheritance
-  struct EXPORT Object : public SDK_NS::Factorable<Object>
+  struct EXPORT Interface
+    : public SDK_NS::Factorable<Interface>
   {
     virtual void hello() = 0;
-    virtual ~Object();
+    virtual ~Interface();
   };
 }
