@@ -4,11 +4,12 @@
 #include "Factory.h"
 
 
+/* Factory.inl */
+
 template <typename T>
 struct SDK_NS::Factory<T>::Creator
 {
   virtual std::unique_ptr<T> create() const = 0;
-
   virtual ~Creator() = default;
 };
 

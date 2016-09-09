@@ -1,15 +1,14 @@
 #pragma once
 
+/* Interface.h */
 
 #include "../SDK/Factorable.h"
 
-
 #ifdef INTERFACE_EXPORTS
-#define EXPORT __declspec( dllexport )
+  #define EXPORT __declspec( dllexport )
 #else
-#define EXPORT __declspec( dllimport )
+  #define EXPORT __declspec( dllimport )
 #endif
-
 
 namespace Interface_NS
 {
