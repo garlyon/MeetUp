@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Hello.cpp" />
+    <ClCompile Include="HelloReg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hello.h" />

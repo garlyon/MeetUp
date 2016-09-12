@@ -37,7 +37,7 @@ namespace SDK_NS
 
 
   template <typename T>
-  Factory<T>& GetFactory() { return T::GetFactory(); }
+  auto& GetFactory() { return ::GetFactory( static_cast<T*>( nullptr ) ); }
 }
 
 #include "Factory.inl"

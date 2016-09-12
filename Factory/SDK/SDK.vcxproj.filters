@@ -13,9 +13,6 @@
     <ClInclude Include="Registrator.h">
       <Filter>Factory</Filter>
     </ClInclude>
-    <ClInclude Include="Factorable.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Factory.inl">

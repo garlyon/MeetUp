@@ -14,9 +14,18 @@
     <ClInclude Include="Interface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InterfaceFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

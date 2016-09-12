@@ -14,12 +14,12 @@ namespace SDK_NS
 
     Registrator( const std::string& i_name ) : d_name{ i_name }
     {
-      T::GetFactory().add<T>( d_name );
+      GetFactory<T>().add<T>( d_name );
     }
 
     ~Registrator()
     {
-      T::GetFactory().remove( d_name );
+      GetFactory<T>().remove( d_name );
     }
 
   private:

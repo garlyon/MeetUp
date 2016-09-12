@@ -1,5 +1,6 @@
-#include "../SDK/Factory.h"           //  here is my template factory
-#include "../Interface/Interface.h"   //  here is my interface
+#include "../SDK/Factory.h"                 //  here is my template factory
+#include "../Interface/Interface.h"         //  here is my interface
+#include "../Interface/InterfaceFactory.h"  //  here is my factory instance
 #include <Windows.h>
 #include <iostream>
 
