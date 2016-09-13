@@ -8,16 +8,16 @@
 namespace SDK_NS
 {
   template <typename T>
-  class Registrator
+  class Record
   {
   public:
 
-    Registrator( const std::string& i_name ) : d_name{ i_name }
+    Record( const std::string& i_name ) : d_name{ i_name }
     {
       GetFactory<T>().add<T>( d_name );
     }
 
-    ~Registrator()
+    ~Record()
     {
       GetFactory<T>().remove( d_name );
     }

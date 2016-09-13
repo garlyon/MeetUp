@@ -1,11 +1,10 @@
 #pragma once
 
 
-/* Factory.h */
-
 #include <memory>
 #include <string>
 #include <unordered_map>
+
 
 namespace SDK_NS
 {

@@ -10,7 +10,7 @@
     <ClInclude Include="Factory.h">
       <Filter>Factory</Filter>
     </ClInclude>
-    <ClInclude Include="Registrator.h">
+    <ClInclude Include="Record.h">
       <Filter>Factory</Filter>
     </ClInclude>
   </ItemGroup>
