@@ -2,6 +2,7 @@
 #include "../Interface/Interface.h"         //  here is my interface
 #include "../Interface/InterfaceFactory.h"  //  here is my factory instance
 #include <Windows.h>
+#include <tchar.h>
 #include <iostream>
 
 
@@ -24,7 +25,7 @@ int main()
   helloInstance();
 
   //  2. Implementation is loaded
-  HMODULE res = ::LoadLibraryA( "Impl.dll" );
+  HMODULE res = ::LoadLibrary( _T( "Impl.dll" ) );
   helloInstance();
 
   //  3. Implementation is unloaded
